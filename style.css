@@ -1,0 +1,290 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #080d1b;
+    color: #ffffff;
+    line-height: 1.6;
+}
+:root {
+    --fundo: #080d1b;
+    --cartao: #111a30;
+    --azul: #38bdf8;
+    --roxo: #a78bfa;
+    --texto: #ffffff;
+    --texto-secundario: #a4b2c9;
+}
+
+/* =========================
+   MENU
+========================= */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(8, 13, 27, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #27334c;
+    padding: 15px 5%;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.logo {
+    color: var(--azul);
+    font-size: 19px;
+    font-weight: bold;
+}
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.menu a:hover {
+    color: var(--azul);
+}
+
+/* =========================
+   CAPA
+========================= */
+.inicio {
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 8%;
+    background:
+        radial-gradient(circle at 80% 40%, #26366a, transparent 55%),
+        linear-gradient(130deg, #0b1022, #101b39);
+}
+.tag {
+    color: var(--azul);
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+.inicio h1 {
+    font-size: clamp(40px, 7vw, 75px);
+    line-height: 1.1;
+    margin: 20px 0;
+}
+.destaque {
+    background: linear-gradient(90deg, #38bdf8, #a78bfa);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.inicio p {
+    max-width: 650px;
+    color: var(--texto-secundario);
+    font-size: 18px;
+}
+
+/* =========================
+   BOTÕES
+========================= */
+.botao {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 22px;
+    background: linear-gradient(90deg, #0284c7, #7c3aed);
+    color: white;
+    border: none;
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.botao:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.2);
+}
+
+/* =========================
+   SEÇÕES
+========================= */
+section {
+    padding: 75px 8%;
+    scroll-margin-top: 70px;
+}
+.secao-escura {
+    background: #0d1426;
+}
+.titulo-secao {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+.subtitulo {
+    color: var(--texto-secundario);
+    margin-bottom: 30px;
+}
+
+/* =========================
+   CARTÕES
+========================= */
+.cartoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+.cartao {
+    background: var(--cartao);
+    border: 1px solid #263653;
+    border-radius: 15px;
+    padding: 22px;
+    transition: 0.2s;
+}
+.cartao:hover {
+    transform: translateY(-5px);
+    border-color: var(--azul);
+}
+.emoji {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+.cartao h3 {
+    margin-bottom: 8px;
+}
+.cartao p {
+    color: var(--texto-secundario);
+    font-size: 14px;
+}
+.etiqueta {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: #164e6380;
+    color: #7dd3fc;
+    font-size: 11px;
+}
+
+/* =========================
+   FILTRO DE PROFISSÕES
+========================= */
+select {
+    width: 100%;
+    max-width: 400px;
+    padding: 13px;
+    margin-bottom: 25px;
+    background: #111a30;
+    color: white;
+    border: 1px solid #344765;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+/* =========================
+   COMPARAÇÃO HOJE X FUTURO
+========================= */
+.comparacao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.comparacao.cartao:first-child {
+    border-top: 3px solid var(--azul);
+}
+.comparacao.cartao:last-child {
+    border-top: 3px solid var(--roxo);
+}
+
+/* =========================
+   LINHA DO TEMPO
+========================= */
+.linha-do-tempo {
+    border-left: 2px solid var(--azul);
+    margin-left: 12px;
+    padding-left: 25px;
+}
+.item-tempo {
+    position: relative;
+    margin-bottom: 30px;
+}
+.item-tempo::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: var(--azul);
+    border-radius: 50%;
+    position: absolute;
+    left: -32px;
+    top: 7px;
+}
+.item-tempo h3 {
+    color: var(--azul);
+}
+
+/* =========================
+   QUIZ
+========================= */
+.caixa-quiz {
+    max-width: 650px;
+    background: var(--cartao);
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #263653;
+}
+.respostas {
+    display: grid;
+    gap: 10px;
+    margin: 20px 0;
+}
+.resposta {
+    padding: 13px;
+    border-radius: 8px;
+    border: 1px solid #344765;
+    background: #111a30;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s;
+}
+.resposta:hover {
+    border-color: var(--azul);
+    background: #1a2c4a;
+    transform: translateX(3px);
+}
+#mensagem {
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+/* =========================
+   RODAPÉ
+========================= */
+footer {
+    text-align: center;
+    padding: 35px 15px;
+    background: #070b15;
+    color: var(--texto-secundario);
+    font-size: 13px;
+}
+
+/* =========================
+   CELULAR
+========================= */
+@media (max-width: 700px) {
+    nav { flex-direction: column; align-items: flex-start; }
+   .menu { gap: 10px; }
+   .inicio { min-height: 500px; padding: 70px 7%; }
+    section { padding: 55px 6%; }
+   .comparacao { grid-template-columns: 1fr; }
+}

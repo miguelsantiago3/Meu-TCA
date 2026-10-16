@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profissões do Futuro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🚀 PROFISSÕES DO FUTURO</div>
+            <div class="menu">
+                <a href="#inicio">Início</a>
+                <a href="#profissoes">Profissões</a>
+                <a href="#descubra">Descubra</a>
+                <a href="#futuro">Hoje × Futuro</a>
+                <a href="#quiz">Quiz</a>
+                <a href="#sobre">Sobre</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="inicio" id="inicio">
+            <span class="tag">TECNOLOGIA • INOVAÇÃO • FUTURO</span>
+            <h1>O futuro está<br><span class="destaque">em nossas mãos.</span></h1>
+            <p>Descubra profissões que podem transformar o mundo, conheça novas áreas de trabalho e explore as habilidades que poderão ser importantes nos próximos anos.</p>
+            <div><a href="#profissoes" class="botao">EXPLORAR PROFISSÕES →</a></div>
+        </section>
+
+        <section>
+            <h2 class="titulo-secao">🌎 O mundo está mudando</h2>
+            <p class="subtitulo">Três áreas que estão transformando o mercado de trabalho.</p>
+            <div class="cartoes">
+                <div class="cartao"><div class="emoji">🤖</div><h3>Inteligência Artificial</h3><p>A inteligência artificial está transformando a maneira como diversas tarefas são realizadas.</p></div>
+                <div class="cartao"><div class="emoji">🌱</div><h3>Sustentabilidade</h3><p>Os desafios ambientais aumentam a necessidade de profissionais especializados em sustentabilidade.</p></div>
+                <div class="cartao"><div class="emoji">🧬</div><h3>Ciência e Saúde</h3><p>Novas descobertas científicas podem transformar a medicina e a qualidade de vida.</p></div>
+            </div>
+        </section>
+
+        <section class="secao-escura" id="profissoes">
+            <h2 class="titulo-secao">🔎 Explore as profissões</h2>
+            <p class="subtitulo">Escolha uma área para conhecer profissões relacionadas.</p>
+            <select id="categoria">
+                <option value="todas">Todas as áreas</option>
+                <option value="tecnologia">Tecnologia</option>
+                <option value="ciencia">Ciência e Saúde</option>
+                <option value="ambiente">Meio Ambiente</option>
+                <option value="espaco">Espaço</option>
+                <option value="criatividade">Criatividade e Sociedade</option>
+            </select>
+            <div class="cartoes" id="lista-profissoes"></div>
+        </section>
+
+        <section id="descubra">
+            <h2 class="titulo-secao">🧭 Descubra uma profissão</h2>
+            <p class="subtitulo">Escolha o assunto que mais chama sua atenção.</p>
+            <div class="caixa-quiz">
+                <h3>Qual área você prefere?</h3>
+                <div class="respostas">
+                    <button class="resposta" onclick="mostrarPerfil('tecnologia')">🤖 Tecnologia e computadores</button>
+                    <button class="resposta" onclick="mostrarPerfil('ciencia')">🧬 Ciência e saúde</button>
+                    <button class="resposta" onclick="mostrarPerfil('ambiente')">🌱 Natureza e meio ambiente</button>
+                    <button class="resposta" onclick="mostrarPerfil('espaco')">🚀 Espaço e exploração</button>
+                    <button class="resposta" onclick="mostrarPerfil('criatividade')">🎨 Arte e criatividade</button>
+                </div>
+                <div id="resultado-perfil"></div>
+            </div>
+        </section>
+
+        <section class="secao-escura" id="futuro">
+            <h2 class="titulo-secao">⏳ Hoje × Futuro</h2>
+            <p class="subtitulo">As profissões existentes também podem mudar com novas tecnologias.</p>
+            <div class="comparacao"><div class="cartao"><h3>👨⚕ Medicina hoje</h3><p>Profissionais utilizam exames, equipamentos e sistemas digitais para cuidar dos pacientes.</p></div><div class="cartao"><h3>🔬 Medicina no futuro</h3><p>Inteligência artificial, análise de dados e tratamentos personalizados podem ganhar ainda mais espaço.</p></div></div>
+            <div class="comparacao"><div class="cartao"><h3>👨🏫 Educação hoje</h3><p>Professores utilizam aulas, livros e recursos digitais para ensinar.</p></div><div class="cartao"><h3>💻 Educação no futuro</h3><p>Ferramentas digitais e inteligência artificial podem ajudar a personalizar o ensino.</p></div></div>
+            <div class="comparacao"><div class="cartao"><h3>🌾 Agricultura hoje</h3><p>Trabalhadores utilizam máquinas, técnicas agrícolas e conhecimentos sobre o solo.</p></div><div class="cartao"><h3>🛰 Agricultura no futuro</h3><p>Sensores, drones e sistemas automatizados podem aumentar a precisão das plantações.</p></div></div>
+        </section>
+
+        <section>
+            <h2 class="titulo-secao">📅 Como o trabalho pode evoluir?</h2>
+            <p class="subtitulo">Possíveis transformações do mercado de trabalho.</p>
+            <div class="linha-do-tempo">
+                <div class="item-tempo"><h3>2025–2030</h3><p>Expansão do uso da inteligência artificial e da automação em diferentes setores.</p></div>
+                <div class="item-tempo"><h3>2030–2040</h3><p>Possível crescimento de áreas relacionadas à robótica, energia limpa e biotecnologia.</p></div>
+                <div class="item-tempo"><h3>2040–2050</h3><p>Novas tecnologias podem criar oportunidades e transformar profissões existentes.</p></div>
+                <div class="item-tempo"><h3>2050+</h3><p>Possíveis avanços em exploração espacial, medicina e tecnologias ainda em desenvolvimento.</p></div>
+            </div>
+        </section>
+
+        <section class="secao-escura">
+            <h2 class="titulo-secao">⚠ A tecnologia vai substituir os empregos?</h2>
+            <p class="subtitulo">Uma reflexão sobre os desafios do futuro do trabalho.</p>
+            <div class="cartoes">
+                <div class="cartao"><div class="emoji">🤖</div><h3>O papel da tecnologia</h3><p>Algumas tarefas podem ser automatizadas enquanto novas atividades e ocupações podem surgir.</p></div>
+                <div class="cartao"><div class="emoji">🧠</div><h3>O papel humano</h3><p>Criatividade, comunicação, pensamento crítico e empatia continuam sendo habilidades importantes.</p></div>
+                <div class="cartao"><div class="emoji">⚖</div><h3>Os desafios</h3><p>Educação, adaptação profissional e acesso às novas tecnologias são questões importantes.</p></div>
+            </div>
+        </section>
+
+        <section id="quiz">
+            <h2 class="titulo-secao">🧭 Qual profissão combina com você?</h2>
+            <p class="subtitulo">Não é uma prova. É um teste vocacional para você se imaginar no futuro. Responda com sinceridade!</p>
+            <div class="caixa-quiz">
+                <div id="conteudo-quiz">
+                    <p id="progresso">Pergunta 1 de 7</p>
+                    <div style="width:100%; background:#1a2c4a; height:6px; border-radius:10px; margin: 15px 0;">
+                        <div id="barra-quiz" style="height:6px; background:linear-gradient(90deg,#38bdf8,#a78bfa); width:14%; border-radius:10px; transition:0.4s"></div>
+                    </div>
+                    <h3 id="pergunta" style="margin-top:15px"></h3>
+                    <div class="respostas" id="respostas"></div>
+                </div>
+                <div id="final-quiz" style="display:none">
+                    <h3 id="titulo-resultado" style="font-size:26px"></h3>
+                    <p id="texto-resultado" style="margin-top:12px; color:#a4b2c9; font-size:15px"></p>
+                    <div id="profissoes-resultado" class="cartoes" style="margin-top:20px"></div>
+                    <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:20px">
+                        <button class="botao" onclick="reiniciarQuiz()">Refazer teste ↻</button>
+                        <a href="#profissoes" class="botao" style="background:#111a30; border:1px solid #344765" onclick="filtrarPorVencedor()">Ver todas dessa área →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao-escura" id="sobre">
+            <h2 class="titulo-secao">📚 Sobre o projeto</h2>
+            <div class="cartao">
+                <h3>Profissões do Futuro — TCA 2026</h3>
+                <p style="margin-top:12px">Este projeto tem como objetivo investigar como a tecnologia, a ciência e as transformações sociais e ambientais podem influenciar as profissões e as habilidades necessárias no futuro.</p>
+                <br>
+                <p><strong>Escola:</strong> EMEF Eda Terezinha Chica Medeiros</p>
+                <p><strong>Integrantes:</strong> Mateus, Guilherme, Jhonata, Miguel, Arthur</p>
+                <p><strong>Ano:</strong> 2026</p>
+            </div>
+            <h3 style="margin-top:30px">🔗 Fontes da pesquisa</h3>
+            <p style="color:#a4b2c9; margin-top:10px;">WEF- Future of Jobs 2025 | MEC- Profissões Emergentes | OIT- IA e Empregos (2025)</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>🚀 PROFISSÕES DO FUTURO</p>
+        <p>Projeto TCA • 2026</p>
+        <p style="margin-top:8px">O futuro começa com conhecimento.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
